@@ -1,4 +1,104 @@
-.title {
-  color: red;
-  font-size: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fbf8cc;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #03045e;
+  padding: 0 3rem;
+  height: 5rem;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.header-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-item {
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-icons img {
+  cursor: pointer;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 5rem);
+  padding: 0 3rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #03045e;
+}
+
+.home-sub-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.home-title {
+  font-size: 6.25rem;
+  font-weight: 800;
+  line-height: 116px;
+}
+
+.resume-btn {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.resume-btn button {
+  position: relative;
+  height: 3.25rem;
+  width: 9rem;
+  background-color: transparent;
+  border: 1px solid #474306;
+  color: #474306;
+  border-radius: 0.375rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.resume-btn div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 3.25rem;
+  width: 9rem;
+  background-color: #f5ee84;
+  border-radius: 0.375rem;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+#about {
+  min-height: 100vh;
 }
